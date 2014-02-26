@@ -1,18 +1,21 @@
 # Allows to modify the state of a constraint online
-# string identifier for the controller used
+# string identifier for the controller of the corrisponding constraints
+# Used 
 string controller_id
 
-# hash identifier for this motion
-int64 movement_id #TODO: remove?
+# DEPRECATED hash identifier for this motion
+int64 movement_id #DEPRECATED
 
-# specify position ranges for the current constraint set
+# Note: For each of the following fields, leave an empty/default value will not modify the
+#  corresponding field in the registered constraint, allowing to modify simply one field at a time.
+
+
+# Specify position ranges for the current constraint set
 # which was specified using ConstraintConfig.msg
-# NOTE: arrays in this and that message all need to have
-# same size
+# NOTE: arrays in pos_lo and pos_hi need to have the same size
 float64[] pos_lo	# lower bound
 float64[] pos_hi	# upper bound
 string    selec   # selection of the dof handled (only used for the position constraint)
-                  # TODO: detailed explanation
-
-float64[] gain    # exponential gain (1/3 parameters)
+                  # Used only in position task
+float64[] gain    # gain (size=1: constant gain, size=3: exponential gain)
 
