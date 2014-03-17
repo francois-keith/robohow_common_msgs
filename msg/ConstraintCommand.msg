@@ -3,12 +3,8 @@
 # Used 
 string controller_id
 
-# DEPRECATED hash identifier for this motion
-int64 movement_id #DEPRECATED
-
 # Note: For each of the following fields, leave an empty/default value will not modify the
 #  corresponding field in the registered constraint, allowing to modify simply one field at a time.
-
 
 # Specify position ranges for the current constraint set
 # which was specified using ConstraintConfig.msg
