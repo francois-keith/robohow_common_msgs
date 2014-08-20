@@ -1,9 +1,0 @@
-<package>
-  <description brief="robohow_common_msgs">
-    Messages for specifying movement constraints, and reporting their state.
-  </description>
-  <author>Georg Bartels, Francois Keith, Ingo Kresse, Lucia Pais, Moritz Tenorth</author>
-  <license>BSD</license>
-  <depend package="geometry_msgs"/>
-</package>
-
