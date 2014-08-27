@@ -8,7 +8,7 @@ uint8 OTHER=0	     # defines special tasks known in SoT Database, not formulated
                      # Examples: Joint Limits
 uint8 ANGLE=1		   # computes the angle between the two features
 uint8 DISTANCE=2	 # computes the distance between the two features
-uint8 POSITION=3	 # compute the difference of position between the two features
+uint8 POSITION=3	 # computes the difference of position between the two features
 uint8 POITING_AT=4 # computes a pointing task
 
 uint8 function    # SET this field with one of the enum reported above
