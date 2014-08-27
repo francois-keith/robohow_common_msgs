@@ -1,0 +1,18 @@
+language: cpp
+compiler: gcc
+env:
+  global:
+  - ROS_VERSION=hydro
+  - APT_DEPENDENCIES="ros-hydro-geometry-msgs"
+notifications:
+  email:
+  - francois.keith@gmail.com
+branches:
+  only:
+  - master
+  - catkin
+script: ./.travis/run build
+after_success: ./.travis/run after_success
+after_failure: ./.travis/run after_failure
+before_install: ./.travis/run dependencies/catkin; ./.travis/run before_install
+
